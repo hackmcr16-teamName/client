@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 export default class BackButton extends React.Component {
   render() {
     return (
-     <Link to={this.props.to}>
+      <Link to={this.props.to}>
         <IconButton>
             <ArrowBack />
         </IconButton>

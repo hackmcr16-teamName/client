@@ -7,11 +7,12 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-import App from './components/App'
-import Main from './components/Main'
-import Login from './components/Login'
-import Register from './components/Register'
-import ProfilePage from './components/ProfilePage'
+import App from './views/App'
+import Main from './views/Main'
+import Login from './views/Login'
+import Register from './views/Register'
+import RegisterPhone from './views/RegisterPhone'
+import ProfilePage from './views/ProfilePage'
 import './styles/main.scss'
 
 injectTapEventPlugin()
@@ -24,6 +25,7 @@ const routes = (
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/profile" component={ProfilePage} />
+        <Route path="/registerPhone" component={RegisterPhone} />
       </Route>
     </Router>
   </MuiThemeProvider>

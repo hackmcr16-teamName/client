@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProfileList from './ProfileList'
+import ProfileList from '../components/ProfileList'
 
 export default class ProfilePage extends React.Component {
   render() {

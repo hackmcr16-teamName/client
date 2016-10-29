@@ -1,10 +1,10 @@
 import React from 'react'
 
 import NextButton from 'material-ui/svg-icons/image/navigate-next'
-import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 
-import BackButton from './BackButton'
+import BackButton from '../components/BackButton'
+import Phone from '../components/Phone'
 
 export default class Register extends React.Component {
   render() {
@@ -12,14 +12,13 @@ export default class Register extends React.Component {
       <section>
         <BackButton to='/' />
 
-        <span className="title">Register</span>
+        <span className="title">Register - Phone Number</span>
 
         <section className='register'>
-          <TextField hintText="Enter Your Name"/>
-          <TextField hintText="Enter Your Phone"/>
+          <Phone />
         </section>
 
-        <FloatingActionButton className="nextButton">
+        <FloatingActionButton className="nextButton" >
             <NextButton />
         </FloatingActionButton>
       </section>
