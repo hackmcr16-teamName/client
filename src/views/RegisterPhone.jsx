@@ -10,7 +10,7 @@ export default class Register extends React.Component {
   render() {
     return (
       <section>
-        <BackButton to='/' />
+        <BackButton to='/Register' />
 
         <span className="title">Register - Phone Number</span>
 
