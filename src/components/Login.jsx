@@ -10,9 +10,15 @@ export default class Login extends React.Component {
   render() {
     return (
       <section>
-        <BackButton to='/'/>
-        <TextField className="phoneField" hintText="Enter Your Phone Number!"/>
-        <FloatingActionButton >
+        <BackButton to='/' />
+
+        <span className="title">Login</span>
+
+        <section className="phoneField">
+        <TextField hintText="Enter Your Phone Number!"/>
+        </section>
+
+        <FloatingActionButton className="nextButton">
           <NextButton />
         </FloatingActionButton>
       </section>

@@ -22,16 +22,34 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: scroll;
-    width: 800px;
-
-    .selected {
-    }
+    width: 800px; 
   }
 }
 
 .register{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+}
+
+.phoneField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    padding-bottom: 50px; 
+}
+
+.nextButton{
+  float: right;
+  margin-right: 30px;
 }

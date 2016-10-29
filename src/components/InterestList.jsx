@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 import NextButton from 'material-ui/svg-icons/image/navigate-next'
+import UserButton from 'material-ui/RaisedButton'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 
 import Interest from './Interest'
@@ -36,12 +37,22 @@ const interests = [
 export default class InterestList extends React.Component {
   render() {
     return (
-      <section className="interests">
-        {interests.map(interest => (<Interest key={interest.id} name={interest.name} />))}
+      <section>
+        <section className="interests">
+          {interests.map(interest => (
+            <Interest key={interest.id} name={interest.name} />
+            ))}
+        </section>
+
+        <Link to='/Register'>
+          <FloatingActionButton className="nextButton">
+            <NextButton />
+          </FloatingActionButton>
+        </Link>
+
         <Link to='/Login' >
-        <FloatingActionButton>
-          <NextButton />
-        </FloatingActionButton>
+          <UserButton label="Been here before?" primary className="nextButton"
+           style={{marginTop: '11px' }}/>
         </Link>
       </section>
     )
