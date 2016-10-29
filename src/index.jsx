@@ -9,6 +9,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import App from './components/App'
 import Main from './components/Main'
 import Login from './components/Login'
+import './styles/main.scss';
 
 injectTapEventPlugin()
 
