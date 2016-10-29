@@ -6,7 +6,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <section className="main">
-        <h1 className="headerText">Come and Connect</h1>
+        <h1 className="headerText">What do you want to talk about?</h1>
         <InterestList />
       </section>
     )
