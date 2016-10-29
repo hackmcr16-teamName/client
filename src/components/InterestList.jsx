@@ -1,4 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router'
+
+import NextButton from 'material-ui/svg-icons/image/navigate-next'
+import FloatingActionButton from 'material-ui/FloatingActionButton'
 
 import Interest from './Interest'
 
@@ -34,6 +38,11 @@ export default class InterestList extends React.Component {
     return (
       <section className="interests">
         {interests.map(interest => (<Interest key={interest.id} name={interest.name} />))}
+        <Link to='/Login' >
+        <FloatingActionButton>
+          <NextButton />
+        </FloatingActionButton>
+        </Link>
       </section>
     )
   }
