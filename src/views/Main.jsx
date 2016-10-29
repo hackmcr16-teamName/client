@@ -1,6 +1,6 @@
 import React from 'react'
 
-import InterestList from './InterestList'
+import InterestList from '../components/InterestList'
 
 export default class Main extends React.Component {
   render() {

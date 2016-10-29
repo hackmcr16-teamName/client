@@ -4,7 +4,7 @@ import NextButton from 'material-ui/svg-icons/image/navigate-next'
 import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 
-import BackButton from './BackButton'
+import BackButton from '../components/BackButton'
 
 export default class Login extends React.Component {
   render() {
