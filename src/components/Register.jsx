@@ -5,20 +5,24 @@ import NextButton from 'material-ui/svg-icons/image/navigate-next'
 import TextField from 'material-ui/TextField'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 
-export default class Login extends React.Component {
+const iconButton = {
+  paddingBottom: '50px',
+  float: 'left',
+  clear: 'both',
+}
+
+
+
+export default class Register extends React.Component {
   render() {
     return (
-      <section>
-        <IconButton >
+      <section className='register'>
+        <IconButton>
           <BackButton />
         </IconButton>
-        <br/>
-        <br/>
-        <br/>
-        <TextField className="phoneField" hintText="Enter Your Phone Number!"/>
-        <br/>
-        <br/>
-        <FloatingActionButton >
+        <TextField hintText="Enter Your Name"/>
+        <TextField hintText="Enter Your Phone"/>
+        <FloatingActionButton>
           <NextButton />
         </FloatingActionButton>
       </section>
