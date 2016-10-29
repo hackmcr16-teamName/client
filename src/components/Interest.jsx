@@ -11,7 +11,6 @@ const style = {
   justifyContent: 'center',
   alignItems: 'center',
   fontSize: '1.5em',
-  color: '#00729a',
 }
 
 export default class Interest extends React.Component {
