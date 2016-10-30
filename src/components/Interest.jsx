@@ -1,6 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
 import Paper from 'material-ui/Paper'
+
+import * as interestActions from '../ducks/interest'
 
 const style = {
   borderRadius: 20,
@@ -13,7 +17,7 @@ const style = {
   fontSize: '1.5em',
 }
 
-export default class Interest extends React.Component {
+class Interest extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -23,6 +27,7 @@ export default class Interest extends React.Component {
 
   handleClick = () => {
     this.setState({zDepth: this.state.zDepth === 1 ? 0 : 1})
+    this.props.actions.toggleInterest(this.props.id)
   }
 
   render() {
@@ -37,3 +42,12 @@ export default class Interest extends React.Component {
     )
   }
 }
+
+
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: bindActionCreators(interestActions, dispatch)
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Interest)

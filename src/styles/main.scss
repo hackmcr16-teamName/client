@@ -12,7 +12,7 @@ body {
 
   .headerText {
     width: auto;
-    font-size: 5em;
+    font-size: 4em;
     text-shadow: 3px 3px rgba(0, 0, 0, .1);
     text-align: center;
   }
@@ -22,7 +22,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: scroll;
-    width: 800px; 
+    width: 800px;
+    height: 400px;
   }
 }
 
@@ -46,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 48px;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
 }
 
 .nextButton{

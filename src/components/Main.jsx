@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import InterestList from '../components/InterestList'
-import * as interestActions from '../ducks/interest'
+import InterestList from './InterestList'
+import * as interestActions from '../ducks/interests'
 
 class Main extends React.Component {
   componentWillMount = () => {
@@ -14,7 +14,7 @@ class Main extends React.Component {
     return (
       <section className="main">
         <h1 className="headerText">What do you want to talk about?</h1>
-        {this.props.interests && <InterestList interests={this.props.interests} />}
+        <InterestList />
       </section>
     )
   }
