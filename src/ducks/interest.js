@@ -24,8 +24,8 @@ export default function reducer(state = {}, action) {
     case TOGGLE:
       return {
         interests: state.interests.map(interest => {
-          if (interest.id !== action.id)
-            return interest
+          if (interest.interestID !== action.id)
+            return {...interest}
           return {...interest, selected: true}
         })
       }
