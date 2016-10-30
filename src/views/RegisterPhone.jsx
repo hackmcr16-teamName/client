@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 import NextButton from 'material-ui/svg-icons/image/navigate-next'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
@@ -6,7 +7,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton'
 import BackButton from '../components/BackButton'
 import Phone from '../components/Phone'
 
-export default class Register extends React.Component {
+export default class RegisterPhone extends React.Component {
   render() {
     return (
       <section>
@@ -18,9 +19,11 @@ export default class Register extends React.Component {
           <Phone />
         </section>
 
-        <FloatingActionButton className="nextButton" >
-            <NextButton />
-        </FloatingActionButton>
+        <Link to="/RegisterProfilePic">
+          <FloatingActionButton className="nextButton" >
+              <NextButton />
+          </FloatingActionButton>
+        </Link>
       </section>
     )
   }

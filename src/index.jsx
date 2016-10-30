@@ -12,6 +12,7 @@ import Main from './views/Main'
 import Login from './views/Login'
 import Register from './views/Register'
 import RegisterPhone from './views/RegisterPhone'
+import RegisterProfilePic from './views/RegisterProfilePic'
 import ProfilePage from './views/ProfilePage'
 import './styles/main.scss'
 
@@ -26,10 +27,10 @@ const routes = (
         <Route path="/register" component={Register} />
         <Route path="/profile" component={ProfilePage} />
         <Route path="/registerPhone" component={RegisterPhone} />
+        <Route path="/registerProfilePic" component={RegisterProfilePic} />
       </Route>
     </Router>
   </MuiThemeProvider>
 )
-
 
 ReactDOM.render(routes, document.getElementById('main'))
