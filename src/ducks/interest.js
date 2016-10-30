@@ -59,12 +59,13 @@ export function toggleInterest(id) {
   }
 }
 
+const local = 'http://localhost:5000/interests'
 const tony = 'http://192.168.43.38:8080/interests'
 
 export function fetchInterests() {
   return dispatch => {
     dispatch(fetchInit())
-    return axios.get('http://localhost:5000/interests', { //TODO
+    return axios.get(tony, { //TODO
     }).then(response => {
       return dispatch(fetchSuccess(response.data))
     }).catch(() => {
