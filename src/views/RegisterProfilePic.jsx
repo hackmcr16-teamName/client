@@ -1,5 +1,6 @@
 import React from 'react'
 import Webcam from 'react-webcam'
+import { Link } from 'react-router'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -11,18 +12,12 @@ import BackButton from '../components/BackButton'
 import * as userActions from '../ducks/user'
 
 class RegisterProfilePic extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { screenshot: null }
-  }
-
   screenshot = () => {
     const screenshot = this.refs.webcam.getScreenshot()
-    this.setState({ screenshot })
+    this.props.actions.setPic(screenshot)
   }
 
   handleClick = () => {
-    this.props.actions.setPic(this.state.screenshot)
     this.props.actions.sendUser(this.props.user)
   }
 
@@ -37,9 +32,11 @@ class RegisterProfilePic extends React.Component {
           <Webcam audio={false} ref='webcam'/>
         </section>
 
-        <FloatingActionButton onClick={this.handleClick} className="nextButton" >
+        <Link to="/profile">
+          <FloatingActionButton onClick={this.handleClick} className="nextButton" >
             <NextButton />
-        </FloatingActionButton>
+          </FloatingActionButton>
+        </Link>
 
         <FloatingActionButton className="nextButton" onClick={this.screenshot}>
             <CameraButton />

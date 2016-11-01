@@ -34,13 +34,6 @@ class Main extends React.Component {
           </FloatingActionButton>
         </Link>
 
-        <Link to='/Login' >
-          <UserButton
-            label="Been here before?" 
-            primary
-            className="nextButton"
-            style={{marginTop: '11px' }}/>
-        </Link>
       </section>
     )
   }

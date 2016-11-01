@@ -8,7 +8,6 @@ import FloatingActionButton from 'material-ui/FloatingActionButton'
 import TextField from 'material-ui/TextField'
 
 import BackButton from '../components/BackButton'
-import Phone from '../components/Phone'
 import * as userActions from '../ducks/user'
 
 class RegisterPhone extends React.Component {

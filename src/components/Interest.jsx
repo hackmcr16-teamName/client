@@ -21,13 +21,13 @@ class Interest extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      zDepth: this.props.selected ? 1 : 0
+      zDepth: 0
     }
   }
 
   handleClick = () => {
-    this.props.actions.toggleInterest(this.props.id)
     this.setState({zDepth: this.state.zDepth === 1 ? 0 : 1})
+    this.props.actions.toggleInterest(this.props.id)
   }
 
   render() {

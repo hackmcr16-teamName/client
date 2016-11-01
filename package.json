@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "axios": "^0.15.2",
+    "clockwork": "^0.1.4",
     "material-ui": "^0.16.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

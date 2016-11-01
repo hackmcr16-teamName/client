@@ -5,17 +5,18 @@ body {
   text-shadow: 2px 2px rgba(0, 0, 0, .1);
 }
 
+.headerText {
+  width: auto;
+  font-size: 4em;
+  text-shadow: 3px 3px rgba(0, 0, 0, .1);
+  text-align: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .headerText {
-    width: auto;
-    font-size: 4em;
-    text-shadow: 3px 3px rgba(0, 0, 0, .1);
-    text-align: center;
-  }
 
   .interests {
     display: flex;
@@ -53,4 +54,7 @@ body {
 .nextButton{
   float: right;
   margin-right: 30px;
+}
+
+.selected {
 }
